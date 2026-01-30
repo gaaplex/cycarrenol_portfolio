@@ -9,18 +9,21 @@ const App: React.FC = () => {
     <div className="min-h-screen selection:bg-[#339933] selection:text-white">
       {/* Navigation */}
       <nav className="sticky top-0 z-40 bg-[#020617]/80 backdrop-blur-md border-b border-gray-800">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-[#339933] font-mono font-bold">~/</span>
-            <span className="text-white font-bold tracking-tight">Cristian Carreño - Backend Dev</span>
+            <span className="text-white font-bold tracking-tight text-sm md:text-base hidden sm:inline">Cristian Carreño - Backend Dev</span>
+            <span className="text-white font-bold tracking-tight text-sm sm:hidden">Cristian C.</span>
           </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#projects" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Projects</a>
-            <a href="#skills" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Stack</a>
-            <a href="https://drive.google.com/file/d/12Fn0WJpds-G57R9iVwiQSD_-jOaSFpyl/view?usp=drive_link" target="_blank" className="bg-white text-black px-4 py-2 rounded text-sm font-semibold hover:bg-gray-200 transition-colors">
+          <div className="flex items-center gap-3 md:gap-8">
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#projects" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Projects</a>
+              <a href="#skills" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Stack</a>
+            </div>
+            <a href="https://drive.google.com/file/d/12Fn0WJpds-G57R9iVwiQSD_-jOaSFpyl/view?usp=drive_link" target="_blank" className="bg-white text-black px-3 py-1.5 md:px-4 md:py-2 rounded text-[12px] md:text-sm font-semibold hover:bg-gray-200 transition-colors">
               Resume.pdf
             </a>
-            <a href="https://github.com/gaaplex" target="_blank" className="bg-[#339933] text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700 transition-colors">
+            <a href="https://github.com/gaaplex" target="_blank" className="bg-[#339933] text-white px-3 py-1.5 md:px-4 md:py-2 rounded text-[12px] md:text-sm font-semibold hover:bg-green-700 transition-colors">
               GitHub
             </a>
           </div>
