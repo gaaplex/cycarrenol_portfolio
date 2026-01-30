@@ -12,12 +12,15 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-[#339933] font-mono font-bold">~/</span>
-            <span className="text-white font-bold tracking-tight">backend-engineer</span>
+            <span className="text-white font-bold tracking-tight">Cristian Carreño - Backend Dev</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#projects" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Projects</a>
             <a href="#skills" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Stack</a>
-            <a href="https://github.com" target="_blank" className="bg-[#339933] text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700 transition-colors">
+            <a href="https://drive.google.com/file/d/12Fn0WJpds-G57R9iVwiQSD_-jOaSFpyl/view?usp=drive_link" target="_blank" className="bg-white text-black px-4 py-2 rounded text-sm font-semibold hover:bg-gray-200 transition-colors">
+              Resume.pdf
+            </a>
+            <a href="https://github.com/gaaplex" target="_blank" className="bg-[#339933] text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-700 transition-colors">
               GitHub
             </a>
           </div>
@@ -31,9 +34,9 @@ const App: React.FC = () => {
             Building the <span className="text-[#339933]">Logic</span> that Powers the Web.
           </h1>
           <p className="text-xl text-gray-400 mb-10 leading-relaxed">
-            Systems Engineer specializing in scalable backend architectures, distributed services,
-            and performance optimization using <span className="text-white font-semibold">Node.js</span> and
-            <span className="text-white font-semibold">Cloud Native</span> technologies.
+            Experienced Backend software engineer with 5+ years working with <span className="text-white font-semibold">Node.js</span>,
+            <span className="text-white font-semibold"> JavaScript/TypeScript</span>, PHP (Symfony), Python, and Java, building scalable
+            web applications.
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="px-4 py-2 bg-gray-900 border border-gray-800 rounded flex items-center gap-2">
@@ -79,12 +82,10 @@ const App: React.FC = () => {
       <footer className="border-t border-gray-800 py-12">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-gray-500 text-sm font-mono">
-            &copy; {new Date().getFullYear()} // Built with Node.js palette
+            &copy; {new Date().getFullYear()} | Cristian Carreño | All rights reserved
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-[#339933] text-sm">LinkedIn</a>
-            <a href="#" className="text-gray-400 hover:text-[#339933] text-sm">Twitter/X</a>
-            <a href="#" className="text-gray-400 hover:text-[#339933] text-sm">Resume.pdf</a>
+            <a href="https://www.linkedin.com/in/cycarrenol/" className="text-gray-400 hover:text-[#339933] text-sm">LinkedIn</a>
           </div>
         </div>
       </footer>
