@@ -9,7 +9,16 @@ export const PROJECTS: Project[] = [
     technologies: ['Node.js', 'Express.js', 'Docker', 'HTML', 'CSS', 'JavaScript'],
     link: 'https://github.com/gaaplex/colombianStore',
     github: 'https://github.com/gaaplex/colombianStore'
+  },
+  {
+    id: '2',
+    title: 'Gold Tours',
+    description: 'GoldTours is a full-featured, RESTful API and web application for a tour booking company. This project demonstrates a modern backend architecture using Node.js, Express, and MongoDB, following industry best practices for security, performance, and scalability.',
+    technologies: ['Node.js', 'Express.js', 'Docker', 'MongoDB', 'Mongoose', 'JavaScript'],
+    link: 'https://github.com/gaaplex/goldTours',
+    github: 'https://github.com/gaaplex/goldTours'
   }
+
 ];
 
 export const SKILLS: Skill[] = [
