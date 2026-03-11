@@ -1,25 +1,27 @@
 
 import { Project, Skill } from './types';
 
-export const PROJECTS: Project[] = [
-  {
-    id: '1',
-    title: 'Colombian Store',
-    description: 'high-performance web application built with Node.js as a foundational server-side exercise. It utilizes a custom-built routing system to serve a dynamic storefront for iconic Colombian products.',
-    technologies: ['Node.js', 'Express.js', 'Docker', 'HTML', 'CSS', 'JavaScript'],
-    link: 'https://github.com/gaaplex/colombianStore',
-    github: 'https://github.com/gaaplex/colombianStore'
-  },
-  {
-    id: '2',
-    title: 'Gold Tours',
-    description: 'GoldTours is a full-featured, RESTful API and web application for a tour booking company. This project demonstrates a modern backend architecture using Node.js, Express, and MongoDB, following industry best practices for security, performance, and scalability.',
-    technologies: ['Node.js', 'Express.js', 'Docker', 'MongoDB', 'Mongoose', 'JavaScript'],
-    link: 'https://github.com/gaaplex/goldTours',
-    github: 'https://github.com/gaaplex/goldTours'
+export const fetchProjects = async (): Promise<Project[]> => {
+  try {
+    const response = await fetch('https://api.github.com/users/gaaplex/repos?sort=created&direction=desc');
+    const data = await response.json();
+    
+    return data
+      .filter((repo: any) => !repo.fork && repo.name !== 'cycarrenol_portfolio')
+      .map((repo: any) => ({
+        id: String(repo.id),
+        title: repo.name.split(/[-_]/).map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+        description: repo.description || 'Professional software project focused on backend logic and scalability.',
+        technologies: repo.language ? [repo.language] : ['TypeScript'],
+        link: repo.homepage || repo.html_url,
+        github: repo.html_url
+      }));
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    return [];
   }
+};
 
-];
 
 export const SKILLS: Skill[] = [
   { name: 'Node.js', category: 'Framework' },

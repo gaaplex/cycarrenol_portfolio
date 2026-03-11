@@ -1,10 +1,23 @@
 
 import React from 'react';
-import { PROJECTS, SKILLS } from './constants';
+import { fetchProjects, SKILLS } from './constants';
 import ProjectCard from './components/ProjectCard';
+import { Project } from './types';
 
 
 const App: React.FC = () => {
+  const [projects, setProjects] = React.useState<Project[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const loadProjects = async () => {
+      const data = await fetchProjects();
+      setProjects(data);
+      setLoading(false);
+    };
+    loadProjects();
+  }, []);
+
   return (
     <div className="min-h-screen selection:bg-[#339933] selection:text-white">
       {/* Navigation */}
@@ -73,11 +86,18 @@ const App: React.FC = () => {
           <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
             <span className="text-[#339933]">02.</span> Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {PROJECTS.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+
+          {loading ? (
+            <div className="flex justify-center py-20">
+              <div className="w-8 h-8 border-4 border-[#339933] border-t-transparent rounded-full animate-spin"></div>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 gap-8">
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -97,5 +117,6 @@ const App: React.FC = () => {
     </div>
   );
 };
+
 
 export default App;
