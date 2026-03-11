@@ -26,13 +26,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <p className="text-gray-400 text-sm mb-4 line-clamp-3">
         {project.description}
       </p>
-      <div className="flex flex-wrap gap-2">
-        {project.technologies.map((tech) => (
-          <span key={tech} className="px-2 py-1 text-xs font-mono bg-gray-900 text-[#339933] border border-[#339933]/30 rounded">
-            {tech}
-          </span>
-        ))}
-      </div>
     </div>
   );
 };

@@ -12,7 +12,6 @@ export const fetchProjects = async (): Promise<Project[]> => {
         id: String(repo.id),
         title: repo.name.split(/[-_]/).map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
         description: repo.description || 'Professional software project focused on backend logic and scalability.',
-        technologies: repo.language ? [repo.language] : ['TypeScript'],
         link: repo.homepage || repo.html_url,
         github: repo.html_url
       }));
