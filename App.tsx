@@ -25,15 +25,15 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-[#339933] font-mono font-bold">~/</span>
-            <span className="text-white font-bold tracking-tight text-sm md:text-base hidden sm:inline">Cristian Carreño - Backend Dev</span>
+            <span className="text-white font-bold tracking-tight text-sm md:text-base hidden sm:inline">Cristian Carreño - Software Engineer</span>
             <span className="text-white font-bold tracking-tight text-sm sm:hidden">Cristian C.</span>
           </div>
           <div className="flex items-center gap-3 md:gap-8">
             <div className="hidden md:flex items-center gap-8">
-              <a href="#projects" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Projects</a>
               <a href="#skills" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Stack</a>
+              <a href="#projects" className="text-gray-400 hover:text-[#339933] text-sm transition-colors">Projects</a>
             </div>
-            <a href="https://drive.google.com/file/d/12Fn0WJpds-G57R9iVwiQSD_-jOaSFpyl/view?usp=drive_link" target="_blank" className="bg-white text-black px-3 py-1.5 md:px-4 md:py-2 rounded text-[12px] md:text-sm font-semibold hover:bg-gray-200 transition-colors">
+            <a href="https://drive.google.com/drive/folders/1wjGxilT6Aymve4zCb09zxXLwZZC3-BGz?usp=sharing" target="_blank" className="bg-white text-black px-3 py-1.5 md:px-4 md:py-2 rounded text-[12px] md:text-sm font-semibold hover:bg-gray-200 transition-colors">
               Resume.pdf
             </a>
             <a href="https://github.com/gaaplex" target="_blank" className="bg-[#339933] text-white px-3 py-1.5 md:px-4 md:py-2 rounded text-[12px] md:text-sm font-semibold hover:bg-green-700 transition-colors">
@@ -47,17 +47,17 @@ const App: React.FC = () => {
       <header className="max-w-6xl mx-auto px-6 pt-24 pb-32">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Building the <span className="text-[#339933]">Logic</span> that Powers the Web.
+            Building <span className="text-[#339933]">Scalable</span> Fullstack Solutions.
           </h1>
           <p className="text-xl text-gray-400 mb-10 leading-relaxed">
-            Experienced Backend software engineer with 5+ years working with <span className="text-white font-semibold">Node.js</span>,
-            <span className="text-white font-semibold"> JavaScript/TypeScript</span>, PHP (Symfony), Python, and Java, building scalable
-            web applications.
+            Software engineer with over <span className="text-white font-semibold">5 years</span> of experience building scalable web applications. 
+            Specialized in <span className="text-white font-semibold">Node.js</span>, <span className="text-white font-semibold">TypeScript</span>, 
+            and <span className="text-white font-semibold">React</span>, with strong expertise in APIs, databases, and cloud deployments.
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="px-4 py-2 bg-gray-900 border border-gray-800 rounded flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-ping"></span>
-              <span className="text-xs font-mono text-gray-300">Available for high-stakes projects</span>
+              <span className="text-xs font-mono text-gray-300">Building scalable systems — Open to new opportunities</span>
             </div>
           </div>
         </div>
