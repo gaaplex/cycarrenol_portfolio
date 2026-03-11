@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="group relative bg-[#111827] border border-gray-800 rounded-lg p-6 hover:border-[#339933] transition-all duration-300">
+    <div className="group relative bg-[#111827]/40 backdrop-blur-sm border border-gray-800 rounded-lg p-6 hover:border-[#339933] transition-all duration-300">
       <div className="flex justify-between items-start mb-4">
         <h3 className="text-xl font-bold text-white group-hover:text-[#339933] transition-colors">
           <a href={project.github} target="_blank" rel="noopener noreferrer">

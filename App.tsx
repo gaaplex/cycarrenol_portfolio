@@ -3,6 +3,7 @@ import React from 'react';
 import { fetchProjects, SKILLS } from './constants';
 import ProjectCard from './components/ProjectCard';
 import { Project } from './types';
+import SpaceBackground from './components/SpaceBackground';
 
 
 const App: React.FC = () => {
@@ -19,9 +20,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen selection:bg-[#339933] selection:text-white">
+    <div className="min-h-screen selection:bg-[#339933] selection:text-white relative">
+      <SpaceBackground />
       {/* Navigation */}
-      <nav className="sticky top-0 z-40 bg-[#020617]/80 backdrop-blur-md border-b border-gray-800">
+      <nav className="sticky top-0 z-40 bg-[#020617]/40 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-[#339933] font-mono font-bold">~/</span>
@@ -64,7 +66,7 @@ const App: React.FC = () => {
       </header>
 
       {/* Skills / Tech Stack */}
-      <section id="skills" className="bg-[#0b0f1a] py-24 border-y border-gray-800">
+      <section id="skills" className="py-24 border-y border-gray-800 backdrop-blur-[2px] bg-white/5">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
             <span className="text-[#339933]">01.</span> Core Stack

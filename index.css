@@ -1,0 +1,29 @@
+:root {
+  --space-bg: #020617;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--space-bg);
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  color: #f8fafc;
+}
+
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}
+
+.node-green {
+  color: #339933;
+}
+
+.bg-node-green {
+  background-color: #339933;
+}
+
+.border-node-green {
+  border-color: #339933;
+}
+
